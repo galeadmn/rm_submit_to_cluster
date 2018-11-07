@@ -6,8 +6,6 @@
 #SBATCH --workdir=/share/RM_SLURM
 #SBATCH --array=1-30
 
-module load checkpoint
-module load ncbi-blast 
-module load repeatmasker
+SCRIPT_DIRECTORY=/share/RM_SCRIPTS
 set -x
- bash  /share/RM_SCRIPTS/step2_script.sh $1
+bash  $SCRIPT_DIRECTORY/step2_script.sh $1 $2 $3
