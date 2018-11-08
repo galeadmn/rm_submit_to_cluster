@@ -26,4 +26,4 @@ then
 	then
 		cp ${RMIN} ${RMOUT}
 	fi
-if
+fi
